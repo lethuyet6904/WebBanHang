@@ -1,0 +1,268 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\SV22T1020459.Admin.csproj": {}
+  },
+  "projects": {
+    "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\SV22T1020459.Admin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\SV22T1020459.Admin.csproj",
+        "projectName": "SV22T1020459.Admin",
+        "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\SV22T1020459.Admin.csproj",
+        "packagesPath": "C:\\Users\\VICTUS\\.nuget\\packages\\",
+        "outputPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VICTUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.BusinessLayers\\SV22T1020459.BusinessLayers.csproj": {
+                "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.BusinessLayers\\SV22T1020459.BusinessLayers.csproj"
+              },
+              "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj": {
+                "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj"
+              },
+              "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj": {
+                "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.BusinessLayers\\SV22T1020459.BusinessLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.BusinessLayers\\SV22T1020459.BusinessLayers.csproj",
+        "projectName": "SV22T1020459.BusinessLayers",
+        "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.BusinessLayers\\SV22T1020459.BusinessLayers.csproj",
+        "packagesPath": "C:\\Users\\VICTUS\\.nuget\\packages\\",
+        "outputPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.BusinessLayers\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VICTUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj": {
+                "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj"
+              },
+              "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj": {
+                "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj",
+        "projectName": "SV22T1020459.DataLayers",
+        "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\SV22T1020459.DataLayers.csproj",
+        "packagesPath": "C:\\Users\\VICTUS\\.nuget\\packages\\",
+        "outputPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VICTUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj": {
+                "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.72, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj",
+        "projectName": "SV22T1020459.Models",
+        "projectPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\SV22T1020459.Models.csproj",
+        "packagesPath": "C:\\Users\\VICTUS\\.nuget\\packages\\",
+        "outputPath": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\VICTUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

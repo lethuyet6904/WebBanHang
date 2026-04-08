@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Trang chủ";
+    var categoryProducts = ViewBag.CategoryProducts as Dictionary<SV22T1020459.Models.Catalog.Category, List<SV22T1020459.Models.Catalog.Product>>;
+}
+
+@section Jumbotron {
+    <div class="hero-banner">
+        <div class="container">
+            <div class="hero-banner__inner">
+                <div class="hero-banner__text">
+                    <p class="hero-banner__sub">Chào mừng đến với cửa hàng</p>
+                    <h1 class="hero-banner__title">Mua sắm thông minh<br>Giá tốt mỗi ngày</h1>
+                    <p class="hero-banner__desc">Hàng ngàn sản phẩm chất lượng · Giao hàng nhanh · Đảm bảo hài lòng 100%</p>
+                    <a asp-controller="Product" asp-action="Index" class="hero-banner__btn">
+                        <i class="bi bi-grid me-2"></i>Khám phá ngay
+                    </a>
+                </div>
+                <div class="hero-banner__decor" aria-hidden="true">
+                    <i class="bi bi-bag-check-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature-bar">
+        <div class="container">
+            <div class="feature-bar__list">
+                <div class="feature-bar__item">
+                    <i class="bi bi-truck"></i>
+                    <span>Giao hàng toàn quốc</span>
+                </div>
+                <div class="feature-bar__sep"></div>
+                <div class="feature-bar__item">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Hàng chính hãng 100%</span>
+                </div>
+                <div class="feature-bar__sep"></div>
+                <div class="feature-bar__item">
+                    <i class="bi bi-arrow-repeat"></i>
+                    <span>Đổi trả trong 7 ngày</span>
+                </div>
+                <div class="feature-bar__sep"></div>
+                <div class="feature-bar__item">
+                    <i class="bi bi-headset"></i>
+                    <span>Hỗ trợ 8:00 – 22:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+<div class="container section-products">
+    @if (categoryProducts != null && categoryProducts.Any())
+    {
+        foreach (var kp in categoryProducts)
+        {
+            var category = kp.Key;
+            var products = kp.Value;
+
+            <div class="product-section">
+                <div class="product-section__head">
+                    <h4 class="product-section__title">
+                        <span class="product-section__bar"></span>
+                        @category.CategoryName
+                    </h4>
+                    <a href="/Product/Index?SearchValue=&CategoryID=@category.CategoryID" class="product-section__more">
+                        Xem tất cả <i class="bi bi-arrow-right-short"></i>
+                    </a>
+                </div>
+
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    @foreach (var item in products)
+                    {
+                        <div class="col">
+                            <div class="pcard">
+                                @if (item.Price == 0)
+                                {
+                                    <div class="pcard__badge pcard__badge--out">Hết hàng</div>
+                                }
+                                <a href="/Product/Detail/@item.ProductID" class="pcard__img-wrap">
+                                    <img src="~/images/products/@(string.IsNullOrEmpty(item.Photo) ? "nophoto.png" : item.Photo)"
+                                         class="pcard__img"
+                                         alt="@item.ProductName"
+                                         onerror="this.onerror=null;this.src='/images/products/nophoto.png';" />
+                                </a>
+                                <div class="pcard__body">
+                                    <span class="pcard__cat">@category.CategoryName</span>
+                                    <a href="/Product/Detail/@item.ProductID" class="pcard__name">@item.ProductName</a>
+                                    <div class="pcard__footer">
+                                        <span class="pcard__price">@string.Format("{0:N0} ₫", item.Price)</span>
+                                    </div>
+                                    <form class="ajax-add-to-cart" action="/Cart/Add" method="post">
+                                        <input type="hidden" name="productId" value="@item.ProductID" />
+                                        <input type="hidden" name="quantity" value="1" />
+                                        <button type="submit" class="pcard__add-btn">
+                                            <i class="bi bi-cart-plus-fill me-2"></i>Thêm vào giỏ
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="empty-msg">
+            <i class="bi bi-inbox"></i>
+            <p>Chưa có sản phẩm nào để hiển thị.</p>
+        </div>
+    }
+</div>

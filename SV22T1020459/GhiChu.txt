@@ -1,0 +1,52 @@
+﻿Nhược điểm:
+- Khi tìm kiếm dẫn đến Load lại toàn bộ trang web
+- Lưu lại "bookmark" tìm kiếm khi chuyển trang
+	*	Khi thực hiện tìm kiếm (Search) thì lưu điều kiện tìm kiếm lại.
+	* Khi nhập đầu vào tìm kiếm (Index): kiểm tra xem có điều kiện đang lưu không? Nếu có thì dùng,
+	không có thì tạo điều kiện mới
+  Dùng session để lưu
+  Trong ASP.NET Core MVC, muốn dùng sesion thì phải đăng ký
+Khi Action truyền dữ liệu cho View (dưới dạng model)
+	return View(dữ_liệu);
+(dữ liệu là một object thuộc class nào đó)
+- Phải biết được kiểu dữ liệu của dữ liệu là gì?
+- Trong View nhận dữ liệu, phải khai báo kiểu dữ liệu nhận được là gì, bằng lệnh:
+- Những đối tượng nhập dữ liệu vào form, muốn gửi được dữ liệu lên server:
+	* Phải có thuộc tính name
+	* Giá trị thuộc tính phải trùng với tên thuộc tham số của 
+
+Cơ chế/quy trình:
+
+Người dùng (Client) cung cấp thông tin cho hệ thống (Server) để kiểm tra (username + password/sinh trắc học).
+Hệ thống tiến hành kiểm tra thông tin và nếu thông tin hợp lệ thì hệ thống cấp cho Client một “chứng nhận” (Principal) 
+và trả cho Client dưới dạng 1 Cookie (chuỗi được mã hóa, trong đó chứa thông tin)
+Chuẩn bị thông tin mà sẽ “nhúng” vào trong “Chứng nhận” (vd: UserID, Username,…)
+Tạo “chứng nhận”
+Cấp “chứng nhận” cho Client
+Phía Client lưu giữ Cookie. Mỗi khi thực hiện 1 request thì gửi kèm Cookie này (phần header của request)
+Server dựa vào “chứng nhận” (Cookie) để kiểm tra xem người dùng (Client) có hợp lệ hay không.
+
+Trong ứng dụng ASP.NET Core MVC, muốn dùng chức năng Authentication/Authorization thì phải đăng ký.
+
+Để sử dụng tính năng kiểm tra người sử dụng đã đăng nhập hay chưa (có “giấy chứng nhận” chưa) 
+khi truy cập Controller/Action, sử dụng chỉ thị trước 
+Controller/Action:
+[Authorize]
+
+Bỏ Authorize
+	[AllowAnonymous]
+
+Trong trường hợp cần kiểm tra quyền(Role):
+	[Authorize(Roles = "Danh sách quyền")]
+Danh sách quyền: Tên các quyền (Role) được phân cách bởi dấu phẩy.
+
+Cấp chứng nhận:
+Tạo WebUserData -> Tạo ClaimPrincipal -> Cấp Cookie
+Trình Cookie -> ClaimsPrincipal -> Đọc WebUserData
+
+Trong Action/View, để lấy được Principal thông qua thuộc tính User
+
+-> Hiểu, nhận biết được rủi ro đối với Cookie
+
+
+	

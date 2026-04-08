@@ -1,0 +1,70 @@
+﻿@model ProductSearchInput
+@{
+    ViewData["Title"] = "Sản phẩm";
+}
+
+<div class="container mb-5" id="product-section">
+
+    <!-- SEARCH HERO -->
+    <div class="search-hero">
+        <div class="search-hero__inner">
+            <h2 class="search-hero__title">
+                <i class="bi bi-grid me-2"></i>Khám phá sản phẩm
+            </h2>
+            <p class="search-hero__sub">Tìm kiếm trong hàng trăm sản phẩm chất lượng</p>
+        </div>
+    </div>
+
+    <div class="search-panel">
+        <form id="formSearch"
+              method="get"
+              asp-controller="Product"
+              asp-action="Search"
+              data-target="searchResult"
+              onsubmit="paginationSearch(event, this, 1)">
+
+            <input type="hidden" asp-for="PageSize" />
+
+            <div class="search-bar-row">
+                <div class="search-bar-input-wrap">
+                    <i class="bi bi-search search-bar-icon"></i>
+                    <input type="text" class="search-bar-input"
+                           asp-for="SearchValue"
+                           placeholder="Nhập tên sản phẩm bạn muốn tìm...">
+                </div>
+
+                <div class="search-bar-price">
+                    <div class="price-input-group">
+                        <input type="number" asp-for="MinPrice" placeholder="Giá từ" class="price-input">
+                        <span class="price-label">₫</span>
+                    </div>
+                    <span class="price-sep">–</span>
+                    <div class="price-input-group">
+                        <input type="number" asp-for="MaxPrice" placeholder="Đến" class="price-input">
+                        <span class="price-label">₫</span>
+                    </div>
+                </div>
+
+                <div class="search-bar-cat">
+                    <select class="cat-select" asp-for="CategoryID"
+                            asp-items="await SelectListHelper.Categories()">
+                    </select>
+                </div>
+
+                <button class="search-bar-btn" type="submit">
+                    <i class="bi bi-search me-1"></i>Tìm kiếm
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="searchResult" class="container mb-5"></div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            paginationSearch(null, document.getElementById("formSearch"), @Model.Page);
+        });
+    </script>
+}

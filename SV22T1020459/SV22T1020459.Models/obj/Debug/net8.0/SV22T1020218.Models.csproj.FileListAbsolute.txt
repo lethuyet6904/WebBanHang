@@ -1,0 +1,22 @@
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\bin\Debug\net8.0\SV22T1020218.Models.deps.json
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\bin\Debug\net8.0\SV22T1020218.Models.dll
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\bin\Debug\net8.0\SV22T1020218.Models.pdb
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.AssemblyInfoInputs.cache
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.AssemblyInfo.cs
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.csproj.CoreCompileInputs.cache
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.dll
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\refint\SV22T1020218.Models.dll
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.pdb
+D:\Projects Visual Studio 2022\OnClass\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\ref\SV22T1020218.Models.dll
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\bin\Debug\net8.0\SV22T1020218.Models.deps.json
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\bin\Debug\net8.0\SV22T1020218.Models.dll
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\bin\Debug\net8.0\SV22T1020218.Models.pdb
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.AssemblyInfoInputs.cache
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.AssemblyInfo.cs
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.csproj.CoreCompileInputs.cache
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.dll
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\refint\SV22T1020218.Models.dll
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\SV22T1020218.Models.pdb
+C:\Users\VICTUS\Downloads\SV22T1020218\SV22T1020218\SV22T1020218.Models\obj\Debug\net8.0\ref\SV22T1020218.Models.dll

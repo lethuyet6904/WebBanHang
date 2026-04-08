@@ -1,0 +1,73 @@
+﻿@model IEnumerable<OrderDetailViewInfo>
+@{
+    Layout = null;
+    int stt = 0;
+    decimal grandTotal = 0;
+}
+
+<div class="card card-secondary card-outline">
+    <div class="card-header">
+        <h5 class="card-title mb-0">
+            <i class="bi bi-box-seam me-2"></i> Danh sách mặt hàng
+        </h5>
+    </div>
+
+    <div class="card-body table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+            <thead class="table-secondary text-center">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên hàng</th>
+                    <th>ĐVT</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Thành tiền</th>
+                    <th style="width:90px"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var item in Model)
+                    {
+                        stt += 1;
+                        grandTotal += item.TotalPrice;
+
+                        <tr>
+                            <td class="text-center">@stt</td>
+                            <td>@item.ProductName</td>
+                            <td class="text-center">@item.Unit</td>
+                            <td class="text-center">@item.Quantity</td>
+                            <td class="text-end">@item.SalePrice.ToString("N0")</td>
+                            <td class="text-end">@item.TotalPrice.ToString("N0")</td>
+                            <td class="text-end text-nowrap">
+                                @if (ViewBag.CanEdit == true)
+                                {
+                                    <a href="~/Order/EditDetail?id=@item.OrderID&productId=@item.ProductID" class="btn btn-sm btn-primary open-modal">
+                                        <i class="bi bi-pencil"></i>
+                                    </a>
+                                    <a href="~/Order/DeleteDetail?id=@item.OrderID&productId=@item.ProductID" class="btn btn-sm btn-danger open-modal">
+                                        <i class="bi bi-trash"></i>
+                                    </a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7" class="text-center text-muted">Không có mặt hàng nào trong đơn hàng này.</td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5" class="text-end">Tổng cộng</th>
+                    <th class="text-end">@grandTotal.ToString("N0")</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

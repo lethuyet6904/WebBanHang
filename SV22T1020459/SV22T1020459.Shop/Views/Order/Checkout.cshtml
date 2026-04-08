@@ -1,0 +1,206 @@
+﻿@model List<OrderDetailViewInfo>
+@using SV22T1020459.Shop
+@{
+    ViewData["Title"] = "Thanh toán & Đặt hàng";
+    var userData = User.GetUserData();
+    decimal subTotal = Model.Sum(x => x.Quantity * x.SalePrice);
+    decimal shippingFee = 30000;
+    decimal totalAmount = subTotal + shippingFee;
+}
+
+<div class="container py-5 mb-5">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb fw-semibold">
+            <li class="breadcrumb-item">
+                <a href="/Cart" class="text-decoration-none" style="color:var(--green);">
+                    <i class="bi bi-cart3 me-1"></i>Giỏ hàng
+                </a>
+            </li>
+            <li class="breadcrumb-item active">Thanh toán</li>
+        </ol>
+    </nav>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show shadow-sm mb-4">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <form action="/Order/CreateOrder" method="post" id="checkoutForm" novalidate>
+        @foreach (var item in Model)
+        {
+            <input type="hidden" name="productIds" value="@item.ProductID" />
+        }
+
+        <div class="row gx-lg-5">
+
+            <div class="col-lg-7 mb-4">
+
+                <div class="page-card mb-4">
+                    <div class="page-card__header">
+                        <h5><i class="bi bi-geo-alt-fill me-2"></i>Thông tin nhận hàng</h5>
+                    </div>
+                    <div class="card-body p-4">
+
+                        <div class="alert alert-light border mb-4 d-flex align-items-center gap-3">
+                            <i class="bi bi-person-circle fs-4" style="color:var(--green);"></i>
+                            <div>
+                                <div class="fw-semibold">@userData?.DisplayName</div>
+                                <div class="small text-muted">
+                                    Giao hàng theo thông tin tài khoản.
+                                    <a href="/User/Profile" style="color:var(--green);">Cập nhật?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">
+                                Tỉnh / Thành phố <span class="text-danger">*</span>
+                            </label>
+                            <select class="form-select form-select-lg"
+                                    name="DeliveryProvince"
+                                    id="DeliveryProvince"
+                                    required
+                                    asp-items="await SelectListHelper.Provinces()">
+                                <option value="">-- Chọn tỉnh / thành phố --</option>
+                            </select>
+                            <div class="invalid-feedback">Vui lòng chọn tỉnh / thành phố.</div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label class="form-label fw-semibold">
+                                Địa chỉ giao hàng chi tiết <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control form-control-lg"
+                                      name="DeliveryAddress"
+                                      rows="3"
+                                      placeholder="Số nhà, tên đường, phường/xã, quận/huyện..."
+                                      minlength="10"
+                                      required></textarea>
+                            <div class="invalid-feedback">Vui lòng nhập địa chỉ giao hàng.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-card">
+                    <div class="page-card__header">
+                        <h5><i class="bi bi-credit-card me-2"></i>Hình thức thanh toán</h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="payment-methods">
+
+                            <label class="payment-option">
+                                <input type="radio" name="PaymentMethod" value="COD" checked>
+                                <div class="payment-option__icon">
+                                    <i class="bi bi-cash-coin"></i>
+                                </div>
+                                <div class="payment-option__info">
+                                    <div class="payment-option__name">Thanh toán khi nhận hàng (COD)</div>
+                                    <div class="payment-option__desc">Trả tiền mặt khi nhận được hàng</div>
+                                </div>
+                                <span class="payment-option__badge">Phổ biến</span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="PaymentMethod" value="BANK">
+                                <div class="payment-option__icon" style="background:#e8f4fd;color:#1565c0;">
+                                    <i class="bi bi-bank2"></i>
+                                </div>
+                                <div class="payment-option__info">
+                                    <div class="payment-option__name">Chuyển khoản ngân hàng</div>
+                                    <div class="payment-option__desc">Chuyển khoản qua tài khoản ngân hàng</div>
+                                </div>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="PaymentMethod" value="MOMO">
+                                <div class="payment-option__icon" style="background:#fce4ec;color:#c2185b;">
+                                    <i class="bi bi-phone"></i>
+                                </div>
+                                <div class="payment-option__info">
+                                    <div class="payment-option__name">Ví MoMo</div>
+                                    <div class="payment-option__desc">Thanh toán qua ví điện tử MoMo</div>
+                                </div>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TÓM TẮT ĐƠN HÀNG -->
+            <div class="col-lg-5">
+                <div class="order-summary-card sticky-top" style="top:80px;">
+                    <div class="summary-header d-flex align-items-center">
+                        <i class="bi bi-receipt me-2"></i>Tóm tắt đơn hàng
+                    </div>
+                    <div class="p-4 border-bottom" style="max-height:320px;overflow-y:auto;">
+                        @foreach (var item in Model)
+                        {
+                            <div class="d-flex justify-content-between mb-3 align-items-center">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="~/images/products/@(string.IsNullOrEmpty(item.Photo) ? "nophoto.png" : item.Photo)"
+                                         onerror="this.onerror=null;this.src='/images/products/nophoto.png';"
+                                         class="rounded border"
+                                         style="width:52px;height:52px;object-fit:contain;background:var(--green-pale);padding:3px;"
+                                         alt="@item.ProductName" />
+                                    <div>
+                                        <div class="fw-semibold small text-truncate" style="max-width:160px;">@item.ProductName</div>
+                                        <div class="small text-muted">SL: @item.Quantity &nbsp;|&nbsp; @item.SalePrice.ToString("N0") ₫</div>
+                                    </div>
+                                </div>
+                                <div class="fw-bold text-nowrap small" style="color:var(--green-dark);">@((item.Quantity * item.SalePrice).ToString("N0")) ₫</div>
+                            </div>
+                        }
+                    </div>
+                    <div class="p-4">
+                        <div class="d-flex justify-content-between mb-2 small">
+                            <span class="text-muted">Tạm tính (@Model.Sum(x => x.Quantity) sp):</span>
+                            <span class="fw-semibold">@subTotal.ToString("N0") ₫</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3 pb-3 border-bottom small">
+                            <span class="text-muted">Phí vận chuyển:</span>
+                            <span class="fw-semibold">@shippingFee.ToString("N0") ₫</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-end mb-4">
+                            <span class="fw-bold fs-5">TỔNG CỘNG:</span>
+                            <span class="total-price">@totalAmount.ToString("N0") ₫</span>
+                        </div>
+                        <button type="submit" id="btnSubmitOrder" class="btn btn-green btn-lg w-100 fw-bold py-3 rounded-3">
+                            <i class="bi bi-check-circle-fill me-2"></i>XÁC NHẬN ĐẶT HÀNG
+                        </button>
+                        <p class="text-center text-muted mt-3 mb-0" style="font-size:.78rem;">
+                            <i class="bi bi-shield-lock-fill me-1 text-success"></i>
+                            Thông tin của bạn được bảo mật an toàn
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        (() => {
+            const form = document.getElementById('checkoutForm');
+            const btn = document.getElementById('btnSubmitOrder');
+            form.addEventListener('submit', function (e) {
+                if (!form.checkValidity()) {
+                    e.preventDefault(); e.stopPropagation();
+                    form.classList.add('was-validated');
+                    const first = form.querySelector(':invalid');
+                    if (first) first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return;
+                }
+                btn.disabled = true;
+                btn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Đang xử lý...';
+            });
+        })();
+    </script>
+}

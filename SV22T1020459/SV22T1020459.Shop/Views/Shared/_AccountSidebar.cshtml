@@ -1,0 +1,29 @@
+﻿@{
+    var currentPage = ViewContext.RouteData.Values["action"]?.ToString();
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+
+    bool isProfile = currentController == "User" && currentPage == "Profile";
+    bool isPassword = currentController == "User" && currentPage == "ChangePassword";
+    bool isHistory = currentController == "Order" && currentPage == "History";
+}
+
+<div class="account-sidebar">
+    <div class="account-sidebar__avatar">
+        <i class="bi bi-person-circle"></i>
+        <span>@User.GetUserData()?.DisplayName</span>
+    </div>
+    <nav class="account-sidebar__nav">
+        <a href="/User/Profile" class="account-sidebar__link @(isProfile  ? "active" : "")">
+            <i class="bi bi-person-lines-fill"></i> Thông tin tài khoản
+        </a>
+        <a href="/User/ChangePassword" class="account-sidebar__link @(isPassword ? "active" : "")">
+            <i class="bi bi-shield-lock"></i> Đổi mật khẩu
+        </a>
+        <a href="/Order/History" class="account-sidebar__link @(isHistory  ? "active" : "")">
+            <i class="bi bi-clock-history"></i> Lịch sử đơn hàng
+        </a>
+        <a href="/User/Logout" class="account-sidebar__link account-sidebar__link--danger">
+            <i class="bi bi-box-arrow-right"></i> Đăng xuất
+        </a>
+    </nav>
+</div>

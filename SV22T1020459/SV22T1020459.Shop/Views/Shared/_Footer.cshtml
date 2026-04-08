@@ -1,0 +1,60 @@
+﻿@using SV22T1020459.Shop
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4 footer-top">
+
+            <div class="col-lg-4 col-md-6">
+                <a href="/" class="footer-brand">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <span>@ApplicationContext.AppName</span>
+                </a>
+                <p class="footer-about">
+                    Cung cấp thức ăn & phụ kiện thú cưng chính hãng.<br>
+                    Giá tốt · Giao hàng nhanh · Đổi trả dễ dàng.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="footer-social"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="footer-social"><i class="bi bi-tiktok"></i></a>
+                    <a href="#" class="footer-social"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6 class="footer-heading">Điều hướng</h6>
+                <ul class="footer-links">
+                    <li><a asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+                    <li><a asp-controller="Product" asp-action="Index">Sản phẩm</a></li>
+                    <li><a asp-controller="Cart" asp-action="Index">Giỏ hàng</a></li>
+                    <li><a asp-controller="Order" asp-action="History">Đơn hàng</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 col-6">
+                <h6 class="footer-heading">Tài khoản</h6>
+                <ul class="footer-links">
+                    <li><a asp-controller="User" asp-action="Login">Đăng nhập</a></li>
+                    <li><a asp-controller="User" asp-action="Register">Đăng ký</a></li>
+                    <li><a asp-controller="User" asp-action="Profile">Hồ sơ</a></li>
+                    <li><a asp-controller="User" asp-action="ChangePassword">Đổi mật khẩu</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <h6 class="footer-heading">Liên hệ</h6>
+                <ul class="footer-contact">
+                    <li><i class="bi bi-geo-alt-fill"></i><span>Bình Định, Việt Nam</span></li>
+                    <li><i class="bi bi-telephone-fill"></i><a href="tel:18001234">1800 1234</a></li>
+                    <li><i class="bi bi-envelope-fill"></i><a href="mailto:support@shop.vn">support@shop.vn</a></li>
+                    <li><i class="bi bi-clock-fill"></i><span>8:00 – 22:00 (mỗi ngày)</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; @DateTime.Now.Year <strong>@ApplicationContext.AppName</strong>. Tất cả quyền được bảo lưu.</span>
+        </div>
+    </div>
+</footer>

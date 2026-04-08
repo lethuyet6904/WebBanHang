@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\0020a756-ad2b-4a54-90d8-3bd1a84d397c.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\170f5d49-f2dd-4af5-9ec4-c3248b2f31ee.webp" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\54e95454-2bba-4257-a8e3-fa9f72c883ef.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\559adc68-963c-4cee-b5c5-667d34737b2b.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\8a4783d4-8352-4f56-a8dd-786b3349a232.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\9aa980b6-ec43-474b-8b87-6518129e62dd.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\9f59cc02-bbcd-4a92-b21e-00aa2a7c3754.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\a7c52a7c-8fb4-4d0b-b310-f92541fc24ba.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\afb072f4-7916-4c4c-bcf2-4ec35bb93c05.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\products\ce1412e2-a3d1-47c0-a515-d489766d7aa8.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SV22T1020459.BusinessLayers\SV22T1020459.BusinessLayers.csproj" />
+    <ProjectReference Include="..\SV22T1020459.DataLayer\SV22T1020459.DataLayers.csproj" />
+    <ProjectReference Include="..\SV22T1020459.Models\SV22T1020459.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\images\products\demo.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\products\e9db907d-5696-4616-aea3-75da70e384f6.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\products\f5c4225f-9626-4bf6-9ee2-1b23646acf96.jpg">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Update="wwwroot\images\products\nophoto.png">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

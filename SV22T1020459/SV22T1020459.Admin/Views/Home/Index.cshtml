@@ -1,0 +1,200 @@
+﻿@model SV22T1020459.Models.DashboardModel
+@{
+    ViewBag.Title = "Tổng quan hệ thống";
+
+    var monthlyData = Model.MonthlyRevenue.Count == 12
+        ? Model.MonthlyRevenue
+        : Enumerable.Repeat(0m, 12).ToList();
+
+    var chartDataJson = "[" + string.Join(",", monthlyData.Select(v => (v / 1_000_000m).ToString("F2", System.Globalization.CultureInfo.InvariantCulture))) + "]";
+}
+
+<div class="row">
+    <div class="col-lg-3 col-6">
+        <div class="card text-bg-primary">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div style="min-width:0; flex:1;">
+                        <h6 class="card-title">Doanh thu hôm nay</h6><br>
+                        <h3 class="mb-0 text-truncate">@Model.TodayRevenue.ToString("N0") đ</h3>
+                    </div>
+                    <i class="bi bi-currency-dollar fs-1 opacity-50 flex-shrink-0 ms-2"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="card text-bg-success">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tổng đơn hàng</h6>
+                        <h3 class="mb-0">@Model.TotalOrders.ToString("N0")</h3>
+                    </div>
+                    <i class="bi bi-receipt fs-1 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="card text-bg-warning">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-title">Khách hàng</h6>
+                        <h3 class="mb-0">@Model.TotalCustomers.ToString("N0")</h3>
+                    </div>
+                    <i class="bi bi-people fs-1 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-6">
+        <div class="card text-bg-danger">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <h6 class="card-title">Tổng Sản phẩm</h6>
+                        <h3 class="mb-0">@Model.TotalProducts.ToString("N0")</h3>
+                    </div>
+                    <i class="bi bi-box-seam fs-1 opacity-50"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-lg-8">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-bar-chart me-1"></i> Doanh thu theo tháng (@DateTime.Now.Year)
+                </h5>
+            </div>
+            <div class="card-body">
+                <canvas id="revenueChart" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="card card-info card-outline">
+            <div class="card-header">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-star me-1"></i> Top sản phẩm bán chạy
+                </h5>
+            </div>
+            <div class="card-body p-0">
+                <ul class="list-group list-group-flush">
+                    @if (Model.TopProducts.Any())
+                    {
+                        foreach (var product in Model.TopProducts)
+                        {
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                @product.ProductName
+                                <span class="badge bg-success">@product.TotalQuantity</span>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li class="list-group-item text-center text-muted">Chưa có dữ liệu</li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-12">
+        <div class="card card-primary card-outline">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <h5 class="card-title mb-0">
+                    <i class="bi bi-clock-history me-1"></i>
+                    Đơn hàng cần xử lý (@Model.TotalPendingOrders)
+                </h5>
+                <a href="~/Order?Status=1" class="btn btn-sm btn-outline-primary">Xem tất cả</a>
+            </div>
+            <div class="card-body p-0 table-responsive">
+                <table class="table table-hover mb-0 align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Mã đơn</th>
+                            <th>Khách hàng</th>
+                            <th>Ngày đặt</th>
+                            <th class="text-end">Tổng tiền</th>
+                            <th class="text-center">Trạng thái</th>
+                            <th class="text-center">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.PendingOrders.Any())
+                        {
+                            foreach (var item in Model.PendingOrders)
+                            {
+                                <tr>
+                                    <td class="fw-bold text-primary">#@item.OrderID</td>
+                                    <td>
+                                        @item.CustomerName <br />
+                                        <small class="text-muted">@item.CustomerPhone</small>
+                                    </td>
+                                    <td>@item.OrderTime.ToString("dd/MM/yyyy HH:mm")</td>
+                                    <td class="text-end fw-bold text-danger">@item.TotalPrice.ToString("N0") đ</td>
+                                    <td class="text-center">
+                                        <span class="badge bg-info text-dark">@item.Status.GetDescription()</span>
+                                    </td>
+                                    <td class="text-center">
+                                        <a href="~/Order/Detail/@item.OrderID" class="btn btn-sm btn-info">
+                                            Duyệt ngay
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center text-muted py-4">
+                                    Tuyệt vời! Không có đơn hàng nào đang chờ xử lý.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('revenueChart');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6',
+                    'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                datasets: [{
+                    label: 'Doanh thu (triệu đồng)',
+                    data: @Html.Raw(chartDataJson),
+                    backgroundColor: 'rgba(13,110,253,0.7)',
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: true, position: 'top' }
+                },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    </script>
+}

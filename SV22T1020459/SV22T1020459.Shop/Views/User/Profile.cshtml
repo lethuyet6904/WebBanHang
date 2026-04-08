@@ -1,0 +1,105 @@
+﻿@model Customer
+@using SV22T1020459.Shop
+@{
+    ViewData["Title"] = "Hồ sơ cá nhân";
+}
+
+<div class="container py-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            @await Html.PartialAsync("_AccountSidebar")
+        </div>
+
+        <div class="col-md-9">
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success alert-dismissible fade show shadow-sm mb-4">
+                    <i class="bi bi-check-circle-fill me-2"></i>@TempData["SuccessMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show shadow-sm mb-4">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            <div class="page-card">
+                <div class="page-card__header">
+                    <h5><i class="bi bi-person-gear me-2"></i>Cập nhật hồ sơ cá nhân</h5>
+                </div>
+                <div class="card-body p-4 p-md-5">
+                    <form action="/User/UpdateProfile" method="post">
+
+                        <input type="hidden" asp-for="CustomerID" />
+                        <input type="hidden" asp-for="Password" />
+                        <input type="hidden" asp-for="IsLocked" />
+
+                        <div class="mb-4 row align-items-center">
+                            <label class="col-sm-3 col-form-label text-md-end fw-semibold text-muted">Email đăng nhập</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control bg-light text-muted" asp-for="Email" readonly style="border-style:dashed;">
+                                <div class="form-text" style="color:orange;"><i class="bi bi-info-circle me-1"></i>Không thể thay đổi email đã dùng để đăng ký.</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row align-items-center">
+                            <label class="col-sm-3 col-form-label text-md-end fw-semibold">
+                                Tên khách hàng <span class="text-danger">*</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="text" asp-for="CustomerName"
+                                       class="form-control @(ViewData.ModelState["CustomerName"]?.Errors.Count > 0 ? "is-invalid" : "")">
+                                <span asp-validation-for="CustomerName" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row align-items-center">
+                            <label class="col-sm-3 col-form-label text-md-end fw-semibold">
+                                Tên liên hệ <span class="text-danger">*</span>
+                            </label>
+                            <div class="col-sm-9">
+                                <input type="text" asp-for="ContactName"
+                                       class="form-control @(ViewData.ModelState["ContactName"]?.Errors.Count > 0 ? "is-invalid" : "")">
+                                <span asp-validation-for="ContactName" class="text-danger small"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row align-items-center">
+                            <label class="col-sm-3 col-form-label text-md-end fw-semibold">Số điện thoại</label>
+                            <div class="col-sm-9">
+                                <input type="text" asp-for="Phone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row align-items-center">
+                            <label class="col-sm-3 col-form-label text-md-end fw-semibold">Tỉnh/Thành phố</label>
+                            <div class="col-sm-9">
+                                <select class="form-select" asp-for="Province" asp-items="await SelectListHelper.Provinces()"></select>
+                            </div>
+                        </div>
+
+                        <div class="mb-4 row align-items-center">
+                            <label class="col-sm-3 col-form-label text-md-end fw-semibold">Địa chỉ chi tiết</label>
+                            <div class="col-sm-9">
+                                <input type="text" asp-for="Address" class="form-control" placeholder="Số nhà, đường, phường/xã...">
+                            </div>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div class="row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <button type="submit" class="btn btn-green px-5 py-2 fw-bold">
+                                    <i class="bi bi-save me-1"></i>LƯU THAY ĐỔI
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

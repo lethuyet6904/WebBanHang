@@ -1,0 +1,74 @@
+﻿@using SV22T1020459.Shop
+@{
+    var userData = User.GetUserData();
+    var cart = ShoppingCartService.GetShoppingCart();
+    int cartCount = cart.Count;
+}
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+
+            <a href="~/" class="header-logo">
+                <span class="header-logo__text">@ApplicationContext.AppName</span>
+            </a>
+
+            <nav class="header-nav d-none d-lg-flex">
+                <a asp-controller="Home" asp-action="Index" class="header-nav__item">
+                    <i class="bi bi-house-fill"></i> Trang Chủ
+                </a>
+                <a asp-controller="Product" asp-action="Index" class="header-nav__item">
+                    <i class="bi bi-grid-fill"></i> Sản Phẩm
+                </a>
+            </nav>
+
+            <div class="header-actions">
+                @if (User.Identity != null && User.Identity.IsAuthenticated)
+                {
+                    <div class="dropdown">
+                        <button class="header-user-btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-person-circle"></i>
+                            <span class="d-none d-sm-inline">@userData?.DisplayName</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" asp-controller="User" asp-action="Profile"><i class="bi bi-person me-2"></i>Tài khoản</a></li>
+                            <li><a class="dropdown-item" asp-controller="Order" asp-action="History"><i class="bi bi-receipt me-2"></i>Đơn hàng</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" asp-controller="User" asp-action="Logout"><i class="bi bi-box-arrow-right me-2"></i>Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                }
+                else
+                {
+                    <a asp-controller="User" asp-action="Login" class="header-login-btn">
+                        <i class="bi bi-key"></i>
+                        <span class="d-none d-sm-inline">Login</span>
+                    </a>
+                }
+
+                <a asp-controller="Cart" asp-action="Index" class="header-cart-btn">
+                    <i class="bi bi-cart3"></i>
+                    <span id="cart-badge" class="header-cart-badge @(cartCount > 0 ? "" : "d-none")">@cartCount</span>
+                </a>
+
+                <button class="header-toggle d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="collapse header-mobile" id="mobileMenu">
+        <div class="container pb-3">
+            <form action="/Product/Search" method="get" class="d-flex mb-3 gap-2">
+                <input type="text" name="SearchValue" placeholder="Tìm kiếm..." class="form-control form-control-sm" style="border-radius:8px;" />
+                <button type="submit" class="btn btn-success btn-sm px-3" style="border-radius:8px;"><i class="bi bi-search"></i></button>
+            </form>
+            <div class="d-flex flex-column gap-1">
+                <a asp-controller="Home" asp-action="Index" class="mobile-nav-link"><i class="bi bi-house-fill me-2"></i>Trang Chủ</a>
+                <a asp-controller="Product" asp-action="Index" class="mobile-nav-link"><i class="bi bi-grid-fill me-2"></i>Sản Phẩm</a>
+            </div>
+        </div>
+    </div>
+</header>

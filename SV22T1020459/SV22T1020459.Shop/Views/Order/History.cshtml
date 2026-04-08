@@ -1,0 +1,229 @@
+﻿@model PagedResult<OrderViewInfo>
+@using SV22T1020459.Shop
+@{
+    ViewData["Title"] = "Lịch sử đơn hàng";
+    int currentStatus = ViewBag.CurrentStatus ?? 0;
+
+    string GetStatusBadge(OrderStatusEnum status)
+    {
+        return status switch
+        {
+            OrderStatusEnum.New => "<span class='badge badge-pending  rounded-pill px-3 py-2'>Chờ duyệt</span>",
+            OrderStatusEnum.Accepted => "<span class='badge badge-approved rounded-pill px-3 py-2'>Đã duyệt</span>",
+            OrderStatusEnum.Shipping => "<span class='badge badge-shipping rounded-pill px-3 py-2'>Đang giao</span>",
+            OrderStatusEnum.Completed => "<span class='badge badge-done     rounded-pill px-3 py-2'>Hoàn tất</span>",
+            OrderStatusEnum.Cancelled => "<span class='badge badge-cancel   rounded-pill px-3 py-2'>Đã hủy</span>",
+            OrderStatusEnum.Rejected => "<span class='badge badge-rejected rounded-pill px-3 py-2'>Bị từ chối</span>",
+            _ => "<span class='badge bg-secondary rounded-pill px-3 py-2'>Không rõ</span>"
+        };
+    }
+
+    string GetStatusIcon(int value)
+    {
+        return value switch
+        {
+            0 => "bi-list-ul",
+            1 => "bi-hourglass-split",
+            2 => "bi-check-circle",
+            3 => "bi-truck",
+            4 => "bi-bag-check-fill",
+            -1 => "bi-x-circle",
+            -2 => "bi-slash-circle",
+            _ => "bi-circle"
+        };
+    }
+
+    var statusOptions = new (int Value, string Label)[]
+    {
+        (0,  "Tất cả"),
+        (1,  "Chờ duyệt"),
+        (2,  "Đã duyệt"),
+        (3,  "Đang giao"),
+        (4,  "Hoàn tất"),
+        (-1, "Đã hủy"),
+        (-2, "Bị từ chối"),
+    };
+}
+
+<div class="container py-5 mb-5">
+    <div class="row">
+        <div class="col-md-3 mb-4">
+            @await Html.PartialAsync("_AccountSidebar")
+        </div>
+
+        <div class="col-md-9">
+            <div class="page-card">
+                <div class="page-card__header">
+                    <h5><i class="bi bi-clock-history me-2"></i>Lịch sử đơn hàng</h5>
+                    <p class="text-muted small mb-0 mt-1">Quản lý và theo dõi trạng thái các đơn hàng đã đặt.</p>
+                </div>
+                <div class="card-body p-4">
+
+                    <!-- BỘ LỌC TRẠNG THÁI -->
+                    <div class="mb-4 d-flex flex-wrap gap-2">
+                        @foreach (var opt in statusOptions)
+                        {
+                            bool isActive = currentStatus == opt.Value;
+                            <a href="/Order/History?status=@opt.Value&page=1"
+                               class="btn btn-sm @(isActive ? "btn-green" : "btn-outline-green") rounded-pill px-3 d-flex align-items-center gap-1">
+                                <i class="bi @GetStatusIcon(opt.Value)" style="font-size:.8rem;"></i>
+                                @opt.Label
+                            </a>
+                        }
+                    </div>
+
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show mb-4">
+                            <i class="bi bi-check-circle-fill me-2"></i>@TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show mb-4">
+                            <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["Error"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    @if (!Model.DataItems.Any())
+                    {
+                        <div class="empty-msg py-5">
+                            <i class="bi bi-receipt"></i>
+                            <p>
+                                @if (currentStatus == 0)
+                                {
+                                    <text>Chưa có đơn hàng nào</text>
+                                }
+                                else
+                                {
+                                    <text>Không có đơn hàng nào ở trạng thái này</text>
+                                }
+                            </p>
+                            @if (currentStatus == 0)
+                            {
+                                <a href="/Product" class="btn btn-green px-5 py-3 rounded-pill mt-3 fw-bold fs-6">
+                                    <i class="bi bi-bag-heart-fill me-2"></i>Khám phá sản phẩm ngay
+                                </a>
+                            }
+                            else
+                            {
+                                <a href="/Order/History?status=0" class="btn btn-outline-green px-4 py-2 rounded-pill mt-3">
+                                    <i class="bi bi-arrow-left me-1"></i>Xem tất cả đơn hàng
+                                </a>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <!-- THÔNG TIN TỔNG KẾT -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small text-muted">
+                                Tìm thấy <strong>@Model.RowCount</strong> đơn hàng
+                                @if (currentStatus != 0)
+                                {
+                                    var currentLabel = statusOptions.FirstOrDefault(x => x.Value == currentStatus).Label;
+                                    <text> · Đang lọc: <strong>@currentLabel</strong></text>
+                                }
+                            </span>
+                            @if (Model.PageCount > 1)
+                            {
+                                <span class="small text-muted">
+                                    Trang @Model.PageSize / @Model.PageCount
+                                </span>
+                            }
+                        </div>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 text-center">Mã ĐH</th>
+                                        <th class="py-3">Ngày đặt</th>
+                                        <th class="py-3">Địa chỉ giao hàng</th>
+                                        <th class="py-3">Trạng thái</th>
+                                        <th class="py-3 text-end">Tổng tiền</th>
+                                        <th class="py-3 text-center">Thao tác</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var order in Model.DataItems)
+                                    {
+                                        <tr>
+                                            <td class="text-center fw-bold" style="color:var(--green);">#@order.OrderID</td>
+                                            <td class="small text-muted">@order.OrderTime.ToString("dd/MM/yyyy HH:mm")</td>
+                                            <td class="small" style="max-width:200px;white-space:normal;">
+                                                @{
+                                                    var addr = order.DeliveryAddress ?? "";
+                                                    var prov = string.IsNullOrEmpty(order.DeliveryProvince) ? "" : $", {order.DeliveryProvince}";
+                                                }
+                                                @(string.IsNullOrEmpty(addr) ? "—" : addr + prov)
+                                            </td>
+                                            <td>@Html.Raw(GetStatusBadge(order.Status))</td>
+                                            <td class="text-end fw-bold" style="color:var(--green-dark);">
+                                                @order.TotalPrice.ToString("N0") ₫
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="/Order/Detail/@order.OrderID"
+                                                   class="btn btn-sm btn-outline-green fw-semibold rounded-pill px-3">
+                                                    <i class="bi bi-eye me-1"></i>Xem
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        @if (Model.PageCount > 1)
+                        {
+                            <nav class="mt-4">
+                                <ul class="pagination justify-content-center">
+                                    @* Nút Previous *@
+                                    @if (Model.PageSize > 1)
+                                    {
+                                        <li class="page-item">
+                                            <a class="page-link" href="/Order/History?status=@currentStatus&page=@(Model.PageSize - 1)">
+                                                <i class="bi bi-chevron-left"></i>
+                                            </a>
+                                        </li>
+                                    }
+
+                                    @foreach (var p in Model.GetDisplayPages())
+                                    {
+                                        if (p.IsCurrent)
+                                        {
+                                            <li class="page-item active"><a class="page-link">@p.Page</a></li>
+                                        }
+                                        else if (p.IsEllipsis)
+                                        {
+                                            <li class="page-item disabled"><a class="page-link">…</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li class="page-item">
+                                                <a class="page-link" href="/Order/History?status=@currentStatus&page=@p.Page">@p.Page</a>
+                                            </li>
+                                        }
+                                    }
+
+                                    @* Nút Next *@
+                                    @if (Model.PageSize < Model.PageCount)
+                                    {
+                                        <li class="page-item">
+                                            <a class="page-link" href="/Order/History?status=@currentStatus&page=@(Model.PageSize + 1)">
+                                                <i class="bi bi-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                    }
+                                </ul>
+                            </nav>
+                        }
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

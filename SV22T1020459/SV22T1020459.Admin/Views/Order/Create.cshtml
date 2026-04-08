@@ -1,0 +1,226 @@
+﻿@model ProductSearchInput
+@{
+    ViewBag.Title = "Lập đơn hàng";
+}
+
+<div class="row">
+    <div class="col-4">
+        <div class="card card-outline card-primary h-100">
+            <div class="card-header">
+                <h5 class="mb-0">
+                    <i class="bi bi-search"></i>
+                    Lựa chọn hàng cần bán
+                </h5>
+            </div>
+
+            <div class="card-body">
+                <form id="formSearch" class="md-3"
+                      method="get"
+                      action="~/Order/SearchProduct"
+                      data-target="searchResult"
+                      onsubmit="paginationSearch(event, this, 1)">
+
+                    <input type="hidden" asp-for="PageSize" />
+
+                    <div class="input-group">
+
+                        <input class="form-control"
+                               asp-for="SearchValue"
+                               placeholder="Nhập tên mặt hàng cần tìm" autofocus />
+
+                        <button class="btn btn-primary">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="searchResult"> </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-8">
+
+        <div class="row">
+            <div class="col-12" id="cart">
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card card-outline card-info">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="bi bi-person"></i>
+                            Thông tin khách hàng & nơi giao hàng
+                        </h5>
+                    </div>
+
+                    <div class="card-body">
+                        <form method="post" onsubmit="createOrder(event,this)">
+                            <div class="row mb-3">
+                                <label class="col-md-2 col-form-label">Khách hàng</label>
+                                <div class="col-md-10">
+                                    <select class="form-select" name="customerID" asp-items=" await SelectListHelper.Customers()">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label class="col-md-2 col-form-label">Tỉnh/thành</label>
+                                <div class="col-md-10">
+                                    <select class="form-select" name="province" asp-items="await SelectListHelper.Provinces()">
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <label class="col-md-2 col-form-label">Địa chỉ</label>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" name="address"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="text-end">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-check-circle"></i>
+                                    Lập đơn hàng
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            paginationSearch(null, document.getElementById("formSearch"), @Model.Page);
+            showCart();
+        });
+
+        function showCart() {
+            fetch('/Order/ShowCart')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("cart").innerHTML = html;
+                })
+                .catch(error => {
+                    console.error("Có lỗi xảy ra khi lấy dữ liệu giỏ hàng:", error);
+                });
+        }
+        function addCartItem(event, form) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch('/Order/AddCartItem', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.code === 0) {
+                    alert(data.message);
+                } else {
+                    showCart();
+                }
+            })
+            .catch(error => {
+                console.error("Có lỗi xảy ra khi thêm vào giỏ hàng:", error);
+                alert("Hệ thống đang bận, vui lòng thử lại sau!");
+            });
+        }
+        function deleteCartItem(productId) {
+            fetch(`/Order/DeleteCartItem?productId=${productId}`, {
+                method: 'POST'
+            })
+            .then(response => {
+                if (response.ok) {
+                    showCart();
+                } else {
+                    alert("Có lỗi xảy ra khi xóa sản phẩm khỏi giỏ hàng!");
+                }
+            })
+            .catch(error => {
+                console.error("Lỗi khi xóa sản phẩm:", error);
+                alert("Hệ thống đang bận, vui lòng thử lại sau!");
+            });
+        }
+        function clearCart() {
+            if (!confirm("Bạn có chắc chắn muốn xóa toàn bộ sản phẩm trong giỏ hàng không?")) {
+                return;
+            }
+
+            fetch('/Order/ClearCart', {
+                method: 'POST'
+            })
+            .then(response => {
+                if (response.ok) {
+                    showCart();
+                } else {
+                    alert("Có lỗi xảy ra khi xóa giỏ hàng!");
+                }
+            })
+            .catch(error => {
+                console.error("Lỗi khi xóa toàn bộ giỏ hàng:", error);
+                alert("Hệ thống đang bận, vui lòng thử lại sau!");
+            });
+        }
+        function UpdateCartItem(event, form) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch('/Order/UpdateCartItem', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.code === 0) {
+                    alert(data.message || "Không thể cập nhật giỏ hàng. Vui lòng kiểm tra lại số lượng!");
+                } else {
+                    const modalElement = document.getElementById('dialogModal');
+                    if (modalElement) {
+                        const modalInstance = bootstrap.Modal.getInstance(modalElement);
+                        if (modalInstance) {
+                            modalInstance.hide();
+                        }
+                    }
+
+                    showCart();
+                }
+            })
+            .catch(error => {
+                console.error("Lỗi cập nhật giỏ hàng:", error);
+                alert("Hệ thống đang bận, vui lòng thử lại sau!");
+            });
+        }
+        function createOrder(event, form) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch('/Order/CreateOrder', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.code === 0) {
+                    alert(data.message || "Có lỗi xảy ra trong quá trình xử lý đơn hàng. Vui lòng kiểm tra lại!");
+                } else {
+                    window.location.href = `/Order/Detail/${data.code}`;
+                }
+            })
+            .catch(error => {
+                console.error("Lỗi khi tạo đơn hàng:", error);
+                alert("Hệ thống đang bận, vui lòng thử lại sau!");
+            });
+        }
+    </script>
+}

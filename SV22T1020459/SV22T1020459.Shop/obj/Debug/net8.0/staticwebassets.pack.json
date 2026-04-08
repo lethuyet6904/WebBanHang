@@ -1,0 +1,321 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SV22T1020459.Shop.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SV22T1020459.Shop.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\0020a756-ad2b-4a54-90d8-3bd1a84d397c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0020a756-ad2b-4a54-90d8-3bd1a84d397c.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\170f5d49-f2dd-4af5-9ec4-c3248b2f31ee.webp",
+      "PackagePath": "staticwebassets\\images\\products\\170f5d49-f2dd-4af5-9ec4-c3248b2f31ee.webp"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\54e95454-2bba-4257-a8e3-fa9f72c883ef.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\54e95454-2bba-4257-a8e3-fa9f72c883ef.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\559adc68-963c-4cee-b5c5-667d34737b2b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\559adc68-963c-4cee-b5c5-667d34737b2b.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\8a4783d4-8352-4f56-a8dd-786b3349a232.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8a4783d4-8352-4f56-a8dd-786b3349a232.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\9aa980b6-ec43-474b-8b87-6518129e62dd.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9aa980b6-ec43-474b-8b87-6518129e62dd.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\9f59cc02-bbcd-4a92-b21e-00aa2a7c3754.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9f59cc02-bbcd-4a92-b21e-00aa2a7c3754.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\a7c52a7c-8fb4-4d0b-b310-f92541fc24ba.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a7c52a7c-8fb4-4d0b-b310-f92541fc24ba.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\afb072f4-7916-4c4c-bcf2-4ec35bb93c05.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\afb072f4-7916-4c4c-bcf2-4ec35bb93c05.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\ce1412e2-a3d1-47c0-a515-d489766d7aa8.webp",
+      "PackagePath": "staticwebassets\\images\\products\\ce1412e2-a3d1-47c0-a515-d489766d7aa8.webp"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\demo.png",
+      "PackagePath": "staticwebassets\\images\\products\\demo.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\e9db907d-5696-4616-aea3-75da70e384f6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\e9db907d-5696-4616-aea3-75da70e384f6.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\f5c4225f-9626-4bf6-9ee2-1b23646acf96.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f5c4225f-9626-4bf6-9ee2-1b23646acf96.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\images\\products\\nophoto.png",
+      "PackagePath": "staticwebassets\\images\\products\\nophoto.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Shop\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SV22T1020459.Shop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SV22T1020459.Shop.props",
+      "PackagePath": "build\\SV22T1020459.Shop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SV22T1020459.Shop.props",
+      "PackagePath": "buildMultiTargeting\\SV22T1020459.Shop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SV22T1020459.Shop.props",
+      "PackagePath": "buildTransitive\\SV22T1020459.Shop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

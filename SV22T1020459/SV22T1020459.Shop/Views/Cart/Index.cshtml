@@ -1,0 +1,228 @@
+﻿@model List<OrderDetailViewInfo>
+@{
+    ViewData["Title"] = "Giỏ hàng";
+    int totalItems = Model.Sum(x => x.Quantity);
+    decimal totalPrice = Model.Sum(x => x.Quantity * x.SalePrice);
+}
+
+<div class="container py-4 mb-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4 fw-bold mb-0" style="color:var(--gray-800);">
+            <i class="bi bi-cart3 me-2 text-green"></i>Giỏ hàng của bạn
+        </h2>
+        <span class="badge rounded-pill px-3 py-2 fw-semibold"
+              style="background:var(--green-light);color:var(--green-darker);"
+              id="header-total-qty">@totalItems sản phẩm</span>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mb-4">
+            <i class="bi bi-check-circle-fill me-2"></i>@TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="row gx-4">
+
+        <div class="col-lg-8 mb-4 mb-lg-0">
+            <div class="card border-0 shadow-sm" style="border-radius:var(--radius-lg);">
+
+                <div class="px-4 py-3 border-bottom" style="background:var(--green-pale);border-radius:var(--radius-lg) var(--radius-lg) 0 0;">
+                    <div class="row align-items-center small fw-700 text-uppercase"
+                         style="color:var(--green-darker);letter-spacing:.4px;font-size:.78rem;">
+                        <div class="col-1 text-center">
+                            <input class="form-check-input" type="checkbox" id="selectAll" checked
+                                   style="width:18px;height:18px;accent-color:var(--green);">
+                        </div>
+                        <div class="col-5">Sản phẩm</div>
+                        <div class="col-2 text-center">Đơn giá</div>
+                        <div class="col-2 text-center">Số lượng</div>
+                        <div class="col-2 text-end">Thành tiền</div>
+                    </div>
+                </div>
+
+                <div class="card-body p-0">
+                    @if (Model.Count == 0)
+                    {
+                        <div class="py-5 text-center">
+                            <i class="bi bi-cart-x display-1 d-block mb-3" style="color:var(--gray-200);"></i>
+                            <h5 class="fw-bold" style="color:var(--gray-600);">Giỏ hàng trống</h5>
+                            <p class="text-muted small mb-4">Thêm sản phẩm vào giỏ để bắt đầu mua sắm</p>
+                            <a href="/Product" class="btn btn-green px-4">
+                                <i class="bi bi-bag me-2"></i>Mua sắm ngay
+                            </a>
+                        </div>
+                    }
+                    else
+                    {
+                        foreach (var item in Model)
+                        {
+                            <div class="cart-item-row row align-items-center m-0">
+                                <div class="col-1 text-center">
+                                    <input class="form-check-input item-checkbox"
+                                           type="checkbox"
+                                           value="@item.ProductID"
+                                           data-price="@item.SalePrice"
+                                           data-qty="@item.Quantity"
+                                           checked
+                                           style="width:18px;height:18px;accent-color:var(--green);">
+                                </div>
+                                <div class="col-5 d-flex align-items-center gap-3">
+                                    <a href="/Product/Detail/@item.ProductID" class="text-decoration-none text-dark d-flex align-items-center gap-3">
+                                        <img src="~/images/products/@item.Photo"
+                                             onerror="this.onerror=null;this.src='/images/products/nophoto.png';"
+                                             class="cart-item-img" alt="@item.ProductName">
+                                        <div>
+                                            <div class="fw-semibold" style="font-size:.9rem;color:var(--gray-800);">@item.ProductName</div>
+                                            <div class="small text-muted">ĐVT: @item.Unit</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-2 text-center fw-semibold small" style="color:var(--gray-600);">
+                                    @item.SalePrice.ToString("N0") ₫
+                                </div>
+                                <div class="col-2 d-flex justify-content-center">
+                                    <form action="/Cart/Update" method="post" class="d-flex align-items-center gap-1">
+                                        <input type="hidden" name="productId" value="@item.ProductID">
+                                        <button class="qty-btn" type="button" onclick="updateCartQty(this, -1)">−</button>
+                                        <input type="text" name="quantity" class="qty-input" value="@item.Quantity" readonly>
+                                        <button class="qty-btn" type="button" onclick="updateCartQty(this, 1)">+</button>
+                                    </form>
+                                </div>
+                                <div class="col-2 text-end d-flex align-items-center justify-content-end gap-2">
+                                    <span class="fw-bold" style="color:var(--green-dark);">
+                                        @((item.Quantity * item.SalePrice).ToString("N0")) ₫
+                                    </span>
+                                    <a href="/Cart/Remove/@item.ProductID"
+                                       class="text-muted" style="font-size:1.1rem;"
+                                       title="Xóa"
+                                       onclick="return confirm('Xóa sản phẩm này khỏi giỏ hàng?');">
+                                        <i class="bi bi-trash3" style="color:#ef4444;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                @if (Model.Count > 0)
+                {
+                    <div class="card-footer bg-white border-top d-flex justify-content-between align-items-center px-4 py-3"
+                         style="border-radius:0 0 var(--radius-lg) var(--radius-lg);">
+                        <a href="/Product" class="btn btn-outline-green btn-sm px-3">
+                            <i class="bi bi-arrow-left me-1"></i>Tiếp tục mua sắm
+                        </a>
+                        <a href="/Cart/Clear"
+                           class="small text-decoration-none fw-semibold"
+                           style="color:#ef4444;"
+                           onclick="return confirm('Xóa toàn bộ giỏ hàng?');">
+                            <i class="bi bi-trash3 me-1"></i>Xóa tất cả
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="order-summary-card sticky-top" style="top:80px;">
+                <div class="summary-header d-flex justify-content-between align-items-center">
+                    <span><i class="bi bi-receipt me-2"></i>Tóm tắt đơn hàng</span>
+                </div>
+                <div class="p-4">
+                    <div class="d-flex justify-content-between mb-3 small">
+                        <span class="text-muted">Tạm tính (<span id="summary-qty">@totalItems</span> sp):</span>
+                        <span class="fw-semibold" id="summary-subtotal">@totalPrice.ToString("N0") ₫</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-4 small pb-3 border-bottom">
+                        <span class="text-muted">Phí giao hàng:</span>
+                        <span class="text-green fw-semibold">Tính ở bước thanh toán</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end mb-4">
+                        <span class="fw-bold">TỔNG TIỀN:</span>
+                        <span class="total-price" id="summary-total">@totalPrice.ToString("N0") ₫</span>
+                    </div>
+
+                    <div class="alert mb-4 small border-0 rounded-3 py-2 px-3"
+                         style="background:var(--green-pale);color:var(--green-darker);">
+                        <i class="bi bi-info-circle me-1"></i>
+                        Vui lòng chọn sản phẩm cần thanh toán.
+                    </div>
+
+                    @if (Model.Count > 0)
+                    {
+                        <button type="button" id="btn-checkout"
+                                onclick="proceedToCheckout()"
+                                class="btn btn-cta w-100 py-3 fw-bold fs-6">
+                            THANH TOÁN <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    }
+                    else
+                    {
+                        <button disabled class="btn w-100 py-3 fw-bold"
+                                style="background:var(--gray-200);color:var(--gray-400);border:none;">
+                            GIỎ HÀNG TRỐNG
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateCartQty(btnElement, change) {
+        var input = btnElement.parentElement.querySelector('.qty-input');
+        var newValue = parseInt(input.value) + change;
+        if (newValue >= 1) {
+            input.value = newValue;
+            btnElement.closest('form').submit();
+        } else if (newValue === 0) {
+            if (confirm("Xóa sản phẩm này khỏi giỏ hàng?")) {
+                input.value = newValue;
+                btnElement.closest('form').submit();
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const selectAllCb = document.getElementById("selectAll");
+        const itemCbs = document.querySelectorAll(".item-checkbox");
+        const btnCheckout = document.getElementById("btn-checkout");
+
+        function formatCurrency(n) { return n.toLocaleString('vi-VN') + " ₫"; }
+
+        function calculateTotal() {
+            let qty = 0, price = 0, count = 0;
+            itemCbs.forEach(cb => {
+                if (cb.checked) {
+                    qty += parseInt(cb.getAttribute("data-qty"));
+                    price += parseFloat(cb.getAttribute("data-price")) * parseInt(cb.getAttribute("data-qty"));
+                    count++;
+                }
+            });
+            document.getElementById("header-total-qty").innerText = qty + " sản phẩm";
+            document.getElementById("summary-qty").innerText = qty;
+            document.getElementById("summary-subtotal").innerText = formatCurrency(price);
+            document.getElementById("summary-total").innerText = formatCurrency(price);
+            if (selectAllCb) selectAllCb.checked = count === itemCbs.length && itemCbs.length > 0;
+            if (btnCheckout) btnCheckout.disabled = count === 0;
+        }
+
+        if (selectAllCb) selectAllCb.addEventListener("change", function () {
+            itemCbs.forEach(cb => cb.checked = this.checked);
+            calculateTotal();
+        });
+        itemCbs.forEach(cb => cb.addEventListener("change", calculateTotal));
+    });
+
+    function proceedToCheckout() {
+        let ids = [];
+        document.querySelectorAll(".item-checkbox:checked").forEach(cb => ids.push(cb.value));
+        if (!ids.length) { alert("Vui lòng chọn ít nhất 1 sản phẩm!"); return; }
+        let qs = ids.map(id => "productIds=" + encodeURIComponent(id)).join("&");
+        window.location.href = "/Order/Checkout?" + qs;
+    }
+</script>

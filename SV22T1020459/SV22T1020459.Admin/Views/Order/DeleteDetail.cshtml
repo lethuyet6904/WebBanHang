@@ -1,0 +1,22 @@
+﻿@model OrderDetailViewInfo
+@{
+    Layout = null;
+}
+
+<div class="modal-header bg-danger">
+    <h5 class="modal-title text-white">Xác nhận xoá mặt hàng</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<div class="modal-body">
+    <form id="formDeleteDetail" action="/Order/DeleteDetailConfirm" method="post" onsubmit="return doDeleteDetail(event, this)">
+        <input type="hidden" name="orderId" value="@Model.OrderID" />
+        <input type="hidden" name="productId" value="@Model.ProductID" />
+        <p>Bạn có chắc muốn xoá mặt hàng <strong>@Model.ProductName</strong>?</p>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="submit" class="btn btn-danger" form="formDeleteDetail">Xoá ngay</button>
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+</div>

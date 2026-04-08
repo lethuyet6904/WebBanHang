@@ -1,0 +1,31 @@
+﻿@model OrderViewInfo
+@{
+    Layout = null;
+}
+<div class="modal-header text-bg-danger">
+    <strong class="modal-title">
+        Xóa đơn hàng
+    </strong>
+    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<form action="~/Order/Delete/@Model.OrderID" method="post">
+    <div class="modal-body">
+        <div class="alert alert-danger d-flex align-items-center">
+            <i class="bi bi-exclamation-triangle-fill fs-3 me-3"></i>
+            <div>
+                Bạn có chắc chắn muốn xóa toàn bộ đơn hàng <strong>@Model.OrderID</strong> này không?<br />
+                <em>Lưu ý: Dữ liệu đã xóa sẽ không thể khôi phục!</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-danger">
+            <i class="bi bi-trash"></i> Xác nhận Xóa
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Đóng
+        </button>
+    </div>
+</form>

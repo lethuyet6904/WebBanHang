@@ -1,0 +1,241 @@
+﻿@model Product
+@{
+    ViewData["Title"] = Model.ProductName;
+}
+
+<div class="container py-4 mb-5">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/"><i class="bi bi-house-door"></i> Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="/Product">Sản phẩm</a></li>
+            @if (ViewBag.Category != null)
+            {
+                <li class="breadcrumb-item text-muted">@ViewBag.Category</li>
+            }
+            <li class="breadcrumb-item active">@Model.ProductName</li>
+        </ol>
+    </nav>
+
+    <div class="row gx-5 mb-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+            <div class="page-card mb-3" style="overflow:hidden;">
+                <img id="mainProductImage"
+                     src="~/images/products/@Model.Photo"
+                     onerror="this.onerror=null;this.src='/images/products/nophoto.png';"
+                     class="w-100"
+                     style="height:380px;object-fit:contain;background:var(--green-pale);"
+                     alt="@Model.ProductName">
+            </div>
+            <div class="row row-cols-4 g-2">
+                <div class="col">
+                    <img src="~/images/products/@Model.Photo"
+                         class="product-gallery-thumb active"
+                         onclick="changeMainImage(this.src)"
+                         onerror="this.onerror=null;this.src='/images/products/nophoto.png';"
+                         alt="Ảnh chính">
+                </div>
+                @if (ViewBag.Photos != null)
+                {
+                    foreach (ProductPhoto photo in ViewBag.Photos)
+                    {
+                        <div class="col">
+                            <img src="~/images/products/@photo.Photo"
+                                 class="product-gallery-thumb"
+                                 onclick="changeMainImage(this.src)"
+                                 alt="Ảnh phụ">
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <h1 class="h3 fw-bold mb-2" style="color:var(--gray-800);">@Model.ProductName</h1>
+
+            <div class="mb-3">
+                @if (Model.IsSelling == false)
+                {
+                    <span class="badge rounded-pill px-3 py-2" style="background:#fee2e2;color:#991b1b;">
+                        <i class="bi bi-x-circle me-1"></i>Ngừng kinh doanh
+                    </span>
+                }
+                else
+                {
+                    <span class="badge rounded-pill px-3 py-2" style="background:var(--green-light);color:var(--green-darker);">
+                        <i class="bi bi-check-circle me-1"></i>Đang bán
+                    </span>
+                }
+            </div>
+
+            <div class="rounded-3 p-3 mb-4 border-start border-4" style="border-color:var(--green)!important;background:var(--green-pale);">
+                <span class="fw-bold" style="font-size:2rem;color:var(--green-dark);">
+                    @string.Format("{0:N0} ₫", Model.Price)
+                </span>
+            </div>
+
+            <ul class="list-unstyled mb-4 small">
+                <li class="mb-2 d-flex align-items-center gap-2">
+                    <i class="bi bi-building" style="color:var(--green);"></i>
+                    <span><strong>Nhà cung cấp:</strong> @ViewBag.Supplier</span>
+                </li>
+                <li class="mb-2 d-flex align-items-center gap-2">
+                    <i class="bi bi-box" style="color:var(--green);"></i>
+                    <span><strong>Đơn vị tính:</strong> @Model.Unit</span>
+                </li>
+            </ul>
+
+            <hr style="border-color:var(--gray-200);">
+
+            <form id="addToCartForm" action="/Cart/Add" method="post">
+                <input type="hidden" name="productId" value="@Model.ProductID">
+
+                <div class="mb-4">
+                    <label class="form-label fw-semibold small">Số lượng</label>
+                    <div class="d-flex align-items-center gap-2" style="width:140px;">
+                        <button class="qty-btn" type="button" onclick="updateQty(-1)">−</button>
+                        <input type="text" class="qty-input flex-grow-1" id="qtyInput" name="quantity" value="1" readonly>
+                        <button class="qty-btn" type="button" onclick="updateQty(1)">+</button>
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 mb-4">
+                    <button type="button" onclick="addToCart()" class="btn btn-outline-green btn-lg flex-grow-1 fw-semibold">
+                        <i class="bi bi-cart-plus me-2"></i>THÊM VÀO GIỎ
+                    </button>
+                    <button type="button" onclick="buyNow()" class="btn btn-green btn-lg flex-grow-1 fw-semibold">
+                        <i class="bi bi-flash me-2"></i>MUA NGAY
+                    </button>
+                </div>
+            </form>
+
+            <div class="rounded-3 p-3 border" style="border-color:var(--gray-200);background:var(--gray-50);">
+                <div class="d-flex gap-3 mb-3">
+                    <i class="bi bi-shield-check fs-4" style="color:var(--green);"></i>
+                    <div>
+                        <div class="fw-semibold small">Hàng chính hãng 100%</div>
+                        <div class="text-muted" style="font-size:.8rem;">Đảm bảo chất lượng từ nhà cung cấp</div>
+                    </div>
+                </div>
+                <div class="d-flex gap-3">
+                    <i class="bi bi-arrow-repeat fs-4" style="color:var(--green);"></i>
+                    <div>
+                        <div class="fw-semibold small">Đổi trả trong 7 ngày</div>
+                        <div class="text-muted" style="font-size:.8rem;">Hỗ trợ đổi lỗi sản xuất</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-card" style="overflow:hidden;">
+        <div class="card-header bg-white border-bottom px-4 pt-3 pb-0">
+            <ul class="nav nav-tabs" id="productTabs">
+                <li class="nav-item">
+                    <button class="nav-link active fw-semibold" data-bs-toggle="tab" data-bs-target="#desc" type="button">
+                        Mô tả sản phẩm
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link fw-semibold" data-bs-toggle="tab" data-bs-target="#specs" type="button">
+                        Thông số kỹ thuật
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body p-4">
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="desc">
+                    <p class="text-muted" style="line-height:1.8;">@Model.ProductDescription</p>
+                </div>
+                <div class="tab-pane fade" id="specs">
+                    @if (ViewBag.Attributes != null)
+                    {
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        @foreach (ProductAttribute attr in ViewBag.Attributes)
+                                        {
+                                            <tr>
+                                                <th style="width:35%;background:var(--green-pale);color:var(--green-darker);">@attr.AttributeName</th>
+                                                <td>@attr.AttributeValue</td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="text-muted text-center py-3">Đang cập nhật thông số kỹ thuật</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (ViewBag.RelatedProducts != null && ViewBag.RelatedProducts.Count > 0)
+    {
+        <section class="mt-5 pt-4 border-top">
+            <div class="product-section__head mb-4">
+                <h4 class="product-section__title">
+                    <span class="product-section__bar"></span>Sản phẩm liên quan
+                </h4>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-3">
+                @foreach (Product item in ViewBag.RelatedProducts)
+                {
+                    <div class="col">
+                        <div class="pcard">
+                            <a href="/Product/Detail/@item.ProductID" class="pcard__img-wrap">
+                                <img src="~/images/products/@(string.IsNullOrEmpty(item.Photo) ? "nophoto.png" : item.Photo)"
+                                     class="pcard__img"
+                                     alt="@item.ProductName"
+                                     onerror="this.onerror=null;this.src='/images/products/nophoto.png';">
+                            </a>
+                            <div class="pcard__body">
+                                <a href="/Product/Detail/@item.ProductID" class="pcard__name">@item.ProductName</a>
+                                <div class="pcard__footer">
+                                    <span class="pcard__price">@string.Format("{0:N0} ₫", item.Price)</span>
+                                </div>
+                                <form class="ajax-add-to-cart" action="/Cart/Add" method="post">
+                                    <input type="hidden" name="productId" value="@item.ProductID" />
+                                    <input type="hidden" name="quantity" value="1" />
+                                    <button type="submit" class="pcard__add-btn">
+                                        <i class="bi bi-cart-plus-fill me-2"></i>Thêm vào giỏ
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    }
+</div>
+
+<script>
+    function changeMainImage(src) {
+        document.getElementById('mainProductImage').src = src;
+    }
+    function updateQty(delta) {
+        const input = document.getElementById('qtyInput');
+        let val = parseInt(input.value) + delta;
+        if (val < 1) val = 1;
+        input.value = val;
+    }
+    async function addToCart() {
+        const qty = document.getElementById('qtyInput').value;
+        await handleAddToCart(@Model.ProductID, qty);
+    }
+    async function buyNow() {
+        const qty = document.getElementById('qtyInput').value;
+        const fd = new FormData();
+        fd.append('productId', '@Model.ProductID');
+        fd.append('quantity', qty);
+        const res = await fetch('/Cart/Add', { method: 'POST', body: fd, headers: { 'X-Requested-With': 'XMLHttpRequest' } });
+        if (res.ok) window.location.href = '/Cart/Index';
+    }
+</script>

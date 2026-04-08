@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@(ViewData["Title"] != null ? ViewData["Title"] + " – " : "")@ApplicationContext.AppName</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1055;">
+        <div id="cartSuccessToast" class="toast align-items-center text-white border-0" style="background-color: #198754;" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body fw-semibold">
+                    <i class="bi bi-check-circle-fill me-2"></i> Đã thêm sản phẩm vào giỏ hàng!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    @await Html.PartialAsync("_Header")
+
+    @await RenderSectionAsync("Jumbotron", required: false)
+
+    <main class="flex-grow-1">
+        @RenderBody()
+    </main>
+
+    @await Html.PartialAsync("_Footer")
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        document.addEventListener('submit', async function (e) {
+            if (!e.target || !e.target.classList.contains('ajax-add-to-cart')) return;
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            const form = e.target;
+            const btn = form.querySelector('button[type="submit"]');
+            const url = form.action;
+            const formData = new FormData(form);
+
+            const originalHTML = btn ? btn.innerHTML : '';
+            if (btn) {
+                btn.classList.add('loading');
+                btn.innerHTML = '<i class="bi bi-arrow-repeat me-2"></i>Đang thêm...';
+            }
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                });
+
+                if (response.redirected && response.url.includes('/User/Login')) {
+                    window.location.href = '/User/Login?returnUrl=' + encodeURIComponent(window.location.pathname);
+                    return;
+                }
+
+                const contentType = response.headers.get('content-type') || '';
+                let result = null;
+                if (contentType.includes('application/json')) {
+                    result = await response.json();
+                }
+
+                if (result && result.ok) {
+                    const badge = document.getElementById('cart-badge');
+                    if (badge && result.cartCount !== undefined) {
+                        badge.innerText = result.cartCount > 99 ? '99+' : result.cartCount;
+                        badge.classList.remove('d-none');
+                        badge.animate([
+                            { transform: 'scale(1.6)' },
+                            { transform: 'scale(1)' }
+                        ], { duration: 300, easing: 'ease-out' });
+                    }
+
+                    const toastEl = document.getElementById('cartSuccessToast');
+                    if (toastEl) new bootstrap.Toast(toastEl, { delay: 2000 }).show();
+
+                    if (btn) {
+                        btn.innerHTML = '<i class="bi bi-check-lg me-2"></i>Đã thêm!';
+                        btn.style.background = '#146b3b';
+                        setTimeout(() => {
+                            btn.innerHTML = originalHTML;
+                            btn.style.background = '';
+                            btn.classList.remove('loading');
+                        }, 1200);
+                    }
+                } else if (result && !result.ok) {
+                    if (btn) { btn.innerHTML = originalHTML; btn.classList.remove('loading'); }
+                    alert(result.message || 'Có lỗi xảy ra khi thêm vào giỏ hàng.');
+                } else {
+                    if (btn) { btn.innerHTML = originalHTML; btn.classList.remove('loading'); }
+                    window.location.href = '/User/Login?returnUrl=' + encodeURIComponent(window.location.pathname);
+                }
+            } catch (err) {
+                console.error(err);
+                if (btn) { btn.innerHTML = originalHTML; btn.classList.remove('loading'); }
+                window.location.href = '/User/Login?returnUrl=' + encodeURIComponent(window.location.pathname);
+            }
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

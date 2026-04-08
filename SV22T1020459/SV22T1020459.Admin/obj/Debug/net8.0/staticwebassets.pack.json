@@ -1,0 +1,1089 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\SV22T1020459.Admin.bundle.scp.css",
+      "PackagePath": "staticwebassets\\SV22T1020459.Admin.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\Layout.html",
+      "PackagePath": "staticwebassets\\Layout.html"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\employees\\nophoto.png",
+      "PackagePath": "staticwebassets\\images\\employees\\nophoto.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\0020a756-ad2b-4a54-90d8-3bd1a84d397c.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0020a756-ad2b-4a54-90d8-3bd1a84d397c.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\170f5d49-f2dd-4af5-9ec4-c3248b2f31ee.webp",
+      "PackagePath": "staticwebassets\\images\\products\\170f5d49-f2dd-4af5-9ec4-c3248b2f31ee.webp"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\28e56feb-d8b0-4848-bdbd-f376efa4197f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\28e56feb-d8b0-4848-bdbd-f376efa4197f.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\54e95454-2bba-4257-a8e3-fa9f72c883ef.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\54e95454-2bba-4257-a8e3-fa9f72c883ef.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\559adc68-963c-4cee-b5c5-667d34737b2b.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\559adc68-963c-4cee-b5c5-667d34737b2b.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\5d32ad3d-8e75-496e-af90-80e1f2e3625d.webp",
+      "PackagePath": "staticwebassets\\images\\products\\5d32ad3d-8e75-496e-af90-80e1f2e3625d.webp"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\61206398-55a3-426f-ab5f-2b040ae60635.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\61206398-55a3-426f-ab5f-2b040ae60635.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\61bba44a-a6d3-43dc-ae8c-f295ce05c6ed.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\61bba44a-a6d3-43dc-ae8c-f295ce05c6ed.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\8a4783d4-8352-4f56-a8dd-786b3349a232.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\8a4783d4-8352-4f56-a8dd-786b3349a232.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\9aa980b6-ec43-474b-8b87-6518129e62dd.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9aa980b6-ec43-474b-8b87-6518129e62dd.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\9f59cc02-bbcd-4a92-b21e-00aa2a7c3754.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\9f59cc02-bbcd-4a92-b21e-00aa2a7c3754.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\a7c52a7c-8fb4-4d0b-b310-f92541fc24ba.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\a7c52a7c-8fb4-4d0b-b310-f92541fc24ba.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\afb072f4-7916-4c4c-bcf2-4ec35bb93c05.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\afb072f4-7916-4c4c-bcf2-4ec35bb93c05.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\ce1412e2-a3d1-47c0-a515-d489766d7aa8.webp",
+      "PackagePath": "staticwebassets\\images\\products\\ce1412e2-a3d1-47c0-a515-d489766d7aa8.webp"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\demo.png",
+      "PackagePath": "staticwebassets\\images\\products\\demo.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\e489d446-77ae-4094-b519-51b0496b5176.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\e489d446-77ae-4094-b519-51b0496b5176.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\e9db907d-5696-4616-aea3-75da70e384f6.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\e9db907d-5696-4616-aea3-75da70e384f6.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\eb4e1297-1065-47ae-96d1-5e5d2d44115c.webp",
+      "PackagePath": "staticwebassets\\images\\products\\eb4e1297-1065-47ae-96d1-5e5d2d44115c.webp"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\f5c4225f-9626-4bf6-9ee2-1b23646acf96.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f5c4225f-9626-4bf6-9ee2-1b23646acf96.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\f74dfc6f-eafb-4597-954f-57a1981b25bf.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\f74dfc6f-eafb-4597-954f-57a1981b25bf.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\images\\products\\nophoto.png",
+      "PackagePath": "staticwebassets\\images\\products\\nophoto.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\AdminLTEFullLogo.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\AdminLTEFullLogo.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\AdminLTELogo.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\AdminLTELogo.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\avatar.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\avatar.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\avatar2.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\avatar2.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\avatar3.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\avatar3.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\avatar4.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\avatar4.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\avatar5.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\avatar5.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\boxed-bg.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\boxed-bg.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\boxed-bg.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\boxed-bg.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\credit\\american-express.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\credit\\american-express.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\credit\\cirrus.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\credit\\cirrus.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\credit\\mastercard.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\credit\\mastercard.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\credit\\paypal.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\credit\\paypal.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\credit\\paypal2.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\credit\\paypal2.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\credit\\visa.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\credit\\visa.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\default-150x150.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\default-150x150.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\icons.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\icons.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\photo1.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\photo1.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\photo2.png",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\photo2.png"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\photo3.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\photo3.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\photo4.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\photo4.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\prod-1.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\prod-1.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\prod-2.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\prod-2.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\prod-3.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\prod-3.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\prod-4.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\prod-4.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\prod-5.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\prod-5.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user1-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user1-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user2-160x160.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user2-160x160.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user3-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user3-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user4-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user4-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user5-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user5-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user6-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user6-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user7-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user7-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\assets\\img\\user8-128x128.jpg",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\assets\\img\\user8-128x128.jpg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.css",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.css.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.min.css",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.rtl.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.rtl.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.rtl.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\css\\adminlte.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\css\\adminlte.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\js\\adminlte.js",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\js\\adminlte.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\js\\adminlte.js.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\js\\adminlte.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\js\\adminlte.min.js",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\js\\adminlte.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\adminlte\\js\\adminlte.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\adminlte\\js\\adminlte.min.js.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\autonumeric\\autonumeric.js",
+      "PackagePath": "staticwebassets\\lib\\autonumeric\\autonumeric.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\bootstrap\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\bootstrap\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\bootstrap\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\bootstrap\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\bootstrap\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\index.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\index.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ar-dz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ar-dz.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ar.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\at.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\at.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\az.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\az.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\be.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\be.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bg.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\bs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\bs.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cat.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cat.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ckb.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ckb.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cs.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\cy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\cy.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\da.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\da.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\de.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\de.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\default.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\default.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\eo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\eo.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\es.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\es.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\et.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\et.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fa.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fi.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fo.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\fr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ga.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ga.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\gr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\gr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\he.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\he.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hi.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hu.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\hy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\hy.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\id.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\id.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\index.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\index.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\is.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\is.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\it.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\it.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ja.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ka.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ka.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\km.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\km.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ko.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\kz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\kz.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\lt.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\lv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\lv.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\mk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\mk.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\mn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\mn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ms.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\my.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\my.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\nl.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\nn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\nn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\no.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\no.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pa.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pl.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\pt.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ro.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\ru.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\si.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\si.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sk.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sl.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sq.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sr-cyr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sr-cyr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\sv.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\th.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\th.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\tr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uk.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uz.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\uz_latn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\uz_latn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\vn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\vn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\zh-tw.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\zh-tw.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\l10n\\zh.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\l10n\\zh.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\confirmDate\\confirmDate.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\confirmDate\\confirmDate.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\labelPlugin\\labelPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\labelPlugin\\labelPlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\minMaxTimePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\minMaxTimePlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\momentPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\momentPlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\monthSelect\\index.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\monthSelect\\index.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\rangePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\rangePlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\scrollPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\scrollPlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\plugins\\weekSelect\\weekSelect.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\plugins\\weekSelect\\weekSelect.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\types\\globals.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\globals.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\types\\instance.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\instance.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\types\\locale.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\locale.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\types\\options.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\types\\options.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\utils\\dates.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\dates.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\utils\\dom.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\dom.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\utils\\formatting.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\formatting.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\utils\\index.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\index.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\esm\\utils\\polyfills.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\esm\\utils\\polyfills.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\flatpickr.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\flatpickr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\flatpickr.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\ie.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\ie.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ar-dz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ar-dz.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ar.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ar.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\at.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\at.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\az.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\az.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\be.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\be.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\bg.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bg.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\bn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\bs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\bs.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\cat.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cat.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ckb.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ckb.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\cs.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cs.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\cy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\cy.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\da.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\da.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\de.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\de.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\default.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\default.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\eo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\eo.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\es.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\es.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\et.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\et.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\fa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fa.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\fi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fi.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\fo.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fo.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\fr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\fr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ga.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ga.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\gr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\gr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\he.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\he.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\hi.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hi.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\hr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\hu.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hu.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\hy.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\hy.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\id.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\id.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\index.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\index.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\is.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\is.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\it.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\it.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ja.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ja.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ka.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ka.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\km.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\km.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ko.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ko.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\kz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\kz.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\lt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\lt.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\lv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\lv.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\mk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\mk.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\mn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\mn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ms.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ms.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\my.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\my.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\nl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\nl.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\nn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\nn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\no.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\no.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\pa.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pa.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\pl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pl.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\pt.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\pt.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ro.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ro.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\ru.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\ru.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\si.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\si.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\sk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sk.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\sl.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sl.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\sq.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sq.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\sr-cyr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sr-cyr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\sr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\sv.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\sv.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\th.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\th.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\tr.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\tr.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\uk.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uk.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\uz.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uz.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\uz_latn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\uz_latn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\vn.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\vn.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\zh-tw.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\zh-tw.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\l10n\\zh.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\l10n\\zh.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\confirmDate\\confirmDate.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\confirmDate\\confirmDate.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\confirmDate\\confirmDate.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\confirmDate\\confirmDate.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\labelPlugin\\labelPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\labelPlugin\\labelPlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\minMaxTimePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\minMaxTimePlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\momentPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\momentPlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\monthSelect\\index.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\monthSelect\\index.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\monthSelect\\style.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\monthSelect\\style.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\rangePlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\rangePlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\scrollPlugin.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\scrollPlugin.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\plugins\\weekSelect\\weekSelect.js",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\plugins\\weekSelect\\weekSelect.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\airbnb.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\airbnb.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\confetti.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\confetti.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\dark.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\dark.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\light.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\light.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\material_blue.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_blue.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\material_green.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_green.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\material_orange.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_orange.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\flatpickr\\themes\\material_red.css",
+      "PackagePath": "staticwebassets\\lib\\flatpickr\\themes\\material_red.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\css\\font-awesome.css.map",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.css.map"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\overlay-scrollbars\\overlayscrollbars.browser.es6.min.js",
+      "PackagePath": "staticwebassets\\lib\\overlay-scrollbars\\overlayscrollbars.browser.es6.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\overlay-scrollbars\\overlayscrollbars.min.css",
+      "PackagePath": "staticwebassets\\lib\\overlay-scrollbars\\overlayscrollbars.min.css"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\popperjs\\popper.min.js",
+      "PackagePath": "staticwebassets\\lib\\popperjs\\popper.min.js"
+    },
+    {
+      "Id": "D:\\LapTrinhUngDungWeb\\SV22T1020459\\SV22T1020459\\SV22T1020459.Admin\\wwwroot\\lib\\source-sans-3\\index.css",
+      "PackagePath": "staticwebassets\\lib\\source-sans-3\\index.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SV22T1020459.Admin.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SV22T1020459.Admin.props",
+      "PackagePath": "build\\SV22T1020459.Admin.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SV22T1020459.Admin.props",
+      "PackagePath": "buildMultiTargeting\\SV22T1020459.Admin.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SV22T1020459.Admin.props",
+      "PackagePath": "buildTransitive\\SV22T1020459.Admin.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,260 @@
+﻿@model OrderViewInfo
+@using SV22T1020459.Shop
+@{
+    ViewData["Title"] = $"Đơn hàng #{Model.OrderID}";
+    var orderDetails = ViewBag.OrderDetails as IEnumerable<OrderDetailViewInfo>;
+    decimal subTotal = orderDetails?.Sum(x => x.Quantity * x.SalePrice) ?? 0;
+    decimal shippingFee = 30000;
+    decimal totalAmount = subTotal + shippingFee;
+    int status = (int)Model.Status;
+    int steps = status switch { 2 => 1, 3 => 2, 4 => 3, _ => 0 };
+    double progressPct = steps * 33.33;
+
+    string GetStatusBadge(int s) => s switch
+    {
+        1 => "<span class='badge badge-pending  rounded-pill px-3 py-2'>Chờ duyệt</span>",
+        2 => "<span class='badge badge-approved rounded-pill px-3 py-2'>Đã duyệt</span>",
+        3 => "<span class='badge badge-shipping rounded-pill px-3 py-2'>Đang giao hàng</span>",
+        4 => "<span class='badge badge-done     rounded-pill px-3 py-2'>Hoàn tất</span>",
+        -1 => "<span class='badge badge-cancel   rounded-pill px-3 py-2'>Đã hủy</span>",
+        -2 => "<span class='badge badge-rejected rounded-pill px-3 py-2'>Bị từ chối</span>",
+        _ => "<span class='badge bg-secondary   rounded-pill px-3 py-2'>Đơn mới</span>"
+    };
+}
+
+<div class="container py-4 mb-5">
+
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/User/Profile">Tài khoản</a></li>
+            <li class="breadcrumb-item"><a href="/Order/History">Lịch sử đơn hàng</a></li>
+            <li class="breadcrumb-item active">Đơn #@Model.OrderID</li>
+        </ol>
+    </nav>
+
+    <!-- ORDER HEADER -->
+    <div class="order-detail-header">
+        <div>
+            <div class="order-detail-id">
+                <i class="bi bi-receipt me-2" style="color:var(--green);"></i>Đơn hàng #@Model.OrderID
+            </div>
+            <div class="order-detail-time">
+                <i class="bi bi-clock me-1"></i>Đặt lúc: @Model.OrderTime.ToString("HH:mm – dd/MM/yyyy")
+            </div>
+        </div>
+        <div>@Html.Raw(GetStatusBadge(status))</div>
+    </div>
+
+    <!-- TRACKING -->
+    @if (status != -1 && status != -2)
+    {
+        <div class="page-card mb-4">
+            <div class="card-body px-5 py-4">
+                <div class="tracking-timeline">
+                    <div class="progress-line" style="width:@progressPct%"></div>
+
+                    <div class="tracking-step completed">
+                        <div class="step-icon"><i class="bi bi-cart-check-fill"></i></div>
+                        <div class="fw-semibold small mt-2">Đã đặt hàng</div>
+                        <div class="text-muted" style="font-size:.72rem;">@Model.OrderTime.ToString("dd/MM HH:mm")</div>
+                    </div>
+                    <div class="tracking-step @(steps >= 1 ? "completed" : "")">
+                        <div class="step-icon"><i class="bi bi-box-seam"></i></div>
+                        <div class="fw-semibold small mt-2 @(steps < 1 ? "text-muted" : "")">Đã xác nhận</div>
+                        <div class="text-muted" style="font-size:.72rem;">
+                            @(Model.AcceptTime.HasValue ? Model.AcceptTime.Value.ToString("dd/MM HH:mm") : "Chờ cập nhật")
+                        </div>
+                    </div>
+                    <div class="tracking-step @(steps >= 2 ? "completed" : "")">
+                        <div class="step-icon"><i class="bi bi-truck"></i></div>
+                        <div class="fw-semibold small mt-2 @(steps < 2 ? "text-muted" : "")">Đang giao hàng</div>
+                        <div class="text-muted" style="font-size:.72rem;">
+                            @(Model.ShippedTime.HasValue ? Model.ShippedTime.Value.ToString("dd/MM HH:mm") : "Chờ cập nhật")
+                        </div>
+                    </div>
+                    <div class="tracking-step @(steps >= 3 ? "completed" : "")">
+                        <div class="step-icon"><i class="bi bi-check2-circle"></i></div>
+                        <div class="fw-semibold small mt-2 @(steps < 3 ? "text-muted" : "")">Hoàn tất</div>
+                        <div class="text-muted" style="font-size:.72rem;">
+                            @(Model.FinishedTime.HasValue && status == 4 ? Model.FinishedTime.Value.ToString("dd/MM HH:mm") : "Chờ cập nhật")
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert border-0 shadow-sm mb-4 d-flex align-items-center gap-3"
+             style="background:#fee2e2;color:#991b1b;border-radius:var(--radius-lg);">
+            <i class="bi bi-x-circle-fill fs-4"></i>
+            <div>
+                Đơn hàng đã <strong>@(status == -1 ? "bị hủy" : "bị từ chối")</strong> vào lúc:
+                <strong>@(Model.FinishedTime?.ToString("dd/MM/yyyy HH:mm") ?? "Chưa rõ")</strong>
+            </div>
+        </div>
+    }
+
+    <!-- INFO CARDS -->
+    <div class="row gx-4 mb-4">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <div class="page-card h-100">
+                <div class="page-card__header">
+                    <h6 class="mb-0"><i class="bi bi-geo-alt me-2" style="color:var(--green);"></i>Thông tin nhận hàng</h6>
+                </div>
+                <div class="card-body p-4 small">
+                    @if (!string.IsNullOrEmpty(Model.CustomerContactName))
+                    {
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-person-fill text-muted"></i>
+                            <strong>@Model.CustomerContactName</strong>
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.CustomerPhone))
+                    {
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-telephone-fill text-muted"></i>
+                            <a href="tel:@Model.CustomerPhone" style="color:var(--green);">@Model.CustomerPhone</a>
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.DeliveryAddress))
+                    {
+                        <div class="d-flex align-items-start gap-2 mb-1">
+                            <i class="bi bi-map-fill text-muted mt-1"></i>
+                            <span>@Model.DeliveryAddress</span>
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.DeliveryProvince))
+                    {
+                        <div class="text-muted ms-4">@Model.DeliveryProvince</div>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="page-card h-100">
+                <div class="page-card__header">
+                    <h6 class="mb-0"><i class="bi bi-truck me-2" style="color:var(--green);"></i>Thông tin vận chuyển</h6>
+                </div>
+                <div class="card-body p-4 small">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="fw-semibold">Trạng thái:</span>
+                        @Html.Raw(GetStatusBadge(status))
+                    </div>
+                    @if (!string.IsNullOrEmpty(Model.ShipperName))
+                    {
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-person-badge text-muted"></i>
+                            <span><strong>Shipper:</strong> @Model.ShipperName</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <i class="bi bi-telephone text-muted"></i>
+                            <a href="tel:@Model.ShipperPhone" style="color:var(--green);">@Model.ShipperPhone</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="d-flex align-items-center gap-2 mb-2 text-muted fst-italic">
+                            <i class="bi bi-hourglass-split"></i>
+                            <span>Chưa có thông tin người giao hàng</span>
+                        </div>
+                    }
+                    <div class="d-flex align-items-center gap-2 mt-2">
+                        <i class="bi bi-cash-coin text-muted"></i>
+                        <span><strong>Thanh toán:</strong> COD (khi nhận hàng)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SẢN PHẨM ĐÃ MUA -->
+    <div class="page-card" style="overflow:hidden;">
+        <div class="page-card__header">
+            <h6 class="mb-0"><i class="bi bi-list-check me-2" style="color:var(--green);"></i>Sản phẩm đã mua</h6>
+        </div>
+        <div class="table-responsive">
+            <table class="table align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th class="ps-4">Sản phẩm</th>
+                        <th class="text-center">Đơn giá</th>
+                        <th class="text-center">SL</th>
+                        <th class="text-end pe-4">Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (orderDetails != null)
+                    {
+                        foreach (var item in orderDetails)
+                        {
+                            <tr>
+                                <td class="ps-4">
+                                    <div class="d-flex align-items-center gap-3 my-2">
+                                        <img src="~/images/products/@(string.IsNullOrEmpty(item.Photo) ? "nophoto.png" : item.Photo)"
+                                             class="rounded border"
+                                             style="width:56px;height:56px;object-fit:contain;background:var(--green-pale);padding:4px;"
+                                             alt="@item.ProductName">
+                                        <div>
+                                            <a href="/Product/Detail/@item.ProductID"
+                                               class="fw-semibold text-decoration-none small"
+                                               style="color:var(--gray-800);">@item.ProductName</a>
+                                            <div class="text-muted" style="font-size:.78rem;">ĐVT: @item.Unit</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-center small">@item.SalePrice.ToString("N0") ₫</td>
+                                <td class="text-center fw-semibold">@item.Quantity</td>
+                                <td class="text-end pe-4 fw-bold" style="color:var(--green-dark);">
+                                    @((item.SalePrice * item.Quantity).ToString("N0")) ₫
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="card-footer bg-white p-4">
+            <div class="row justify-content-end">
+                <div class="col-md-4">
+                    <div class="d-flex justify-content-between mb-2 small">
+                        <span class="text-muted">Tạm tính:</span>
+                        <span class="fw-semibold">@subTotal.ToString("N0") ₫</span>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3 pb-3 border-bottom small">
+                        <span class="text-muted">Phí giao hàng:</span>
+                        <span class="fw-semibold">@shippingFee.ToString("N0") ₫</span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold fs-6">TỔNG CỘNG:</span>
+                        <span class="fw-bold" style="font-size:1.4rem;color:var(--green-dark);">
+                            @totalAmount.ToString("N0") ₫
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="mt-4 d-flex justify-content-between align-items-center flex-wrap gap-3">
+        <a href="/Order/History" class="btn btn-outline-green px-4 rounded-pill">
+            <i class="bi bi-arrow-left me-1"></i>Quay lại danh sách
+        </a>
+        <div class="d-flex gap-2">
+            <a href="/Product" class="btn btn-outline-green px-4 rounded-pill">
+                <i class="bi bi-bag me-1"></i>Tiếp tục mua sắm
+            </a>
+            @if (status == 1)
+            {
+                <form method="post" action="/Order/Cancel/@Model.OrderID"
+                      onsubmit="return confirm('Bạn có chắc muốn huỷ đơn hàng #@Model.OrderID không?')">
+                    <button type="submit" class="btn btn-outline-danger px-4 fw-semibold rounded-pill">
+                        <i class="bi bi-x-circle me-1"></i>Huỷ đơn hàng
+                    </button>
+                </form>
+            }
+        </div>
+    </div>
+
+</div>

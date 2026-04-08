@@ -1,0 +1,92 @@
+﻿@model Product
+@{
+    ViewBag.Title = "Xóa mặt hàng";
+}
+
+@section PageToolBar {
+    @if (ViewBag.CanDelete)
+    {
+        <button type="submit" form="formDelete" class="btn btn-danger">
+            <i class="bi bi-trash me-1"></i>
+            Xóa
+        </button>
+    }
+    <a href="~/Product" class="btn btn-secondary ms-1">
+        <i class="bi bi-arrow-left"></i>
+        Quay lại
+    </a>
+}
+
+<div class="row justify-content-center">
+    <div class="col-12">
+        <div class="card card-danger card-outline">
+            <div class="card-header">
+                <h5 class="card-title mb-0 text-danger">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    Xác nhận xóa mặt hàng
+                </h5>
+            </div>
+
+            <div class="card-body">
+                <form id="formDelete" method="post">
+                    @if (ViewBag.CanDelete == false)
+                    {
+                        <div class="alert alert-warning">
+                            <i class="bi bi-exclamation-triangle me-1"></i>
+                            Mặt hàng này không thể xóa vì đang tồn tại trong đơn hàng.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-danger">
+                            <i class="bi bi-trash me-1"></i>
+                            Bạn có chắc chắn muốn xóa mặt hàng này không?
+                        </div>
+                    }
+                    <div class="row">
+                        <div class="col-md-8">
+                            <dl class="row mb-0">
+                                <dt class="col-sm-4">Tên mặt hàng</dt>
+                                <dd class="col-sm-8">@Model.ProductName</dd>
+
+                                <dt class="col-sm-4">Loại hàng</dt>
+                                <dd class="col-sm-8">@Model.CategoryID</dd>
+
+                                <dt class="col-sm-4">Nhà cung cấp</dt>
+                                <dd class="col-sm-8">@Model.SupplierID</dd>
+
+                                <dt class="col-sm-4">Đơn vị tính</dt>
+                                <dd class="col-sm-8">@Model.Unit</dd>
+
+                                <dt class="col-sm-4">Giá bán</dt>
+                                <dd class="col-sm-8">@string.Format("{0:0000}",@Model.Price)</dd>
+
+                                <dt class="col-sm-4">Trạng thái</dt>
+                                @if (Model.IsSelling == true)
+                                {
+                                    <dd class="col-sm-8 text-success">Đang kinh doanh</dd>
+                                }
+                                else
+                                {
+                                    <dd class="col-sm-8 text-danger">Ngừng kinh doanh</dd>
+                                }
+
+                                <dt class="col-sm-4">Mô tả</dt>
+                                <dd class="col-sm-8">
+                                    @Model.ProductDescription
+                                </dd>
+                            </dl>
+                        </div>
+
+                        <div class="col-md-4 text-end">
+                            <img src="~/images/products/demo.png"
+                                 class="img-fluid img-thumbnail"
+                                 alt="Ảnh mặt hàng"
+                                 style="max-height: 220px;" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
